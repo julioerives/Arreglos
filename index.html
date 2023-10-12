@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+    <script src="e.js"></script>
+</head>
+<body onload="show()">
+    <div class="container">
+        <article>
+            <div class="grid">
+                <button onclick="quitarP()">Pasar a la siguiente cancion</button>
+                <button onclick="quitarU()">Quitar la ultima cancion</button>
+            </div>
+            <div class="grid">
+                <input type="text" id="input" placeholder="Ingrese el nombre a borrar">
+                <button onclick="quitarE()">Quitar la cancion</button>
+                <p id="respuesrta"></p>
+            </div>
+            <div class="grid">
+                <input type="text" id="ingresar" placeholder="Ingrese la cancion a agregar">
+                <button onclick="Agregar()">Agregar</button>
+                <p id="respuesta"></p>
+            </div>
+            <div class="grid">
+                <div class="repro">
+                    <h3 id="cancion"></h3>
+            <ul id="ul"></ul>
+                </div>
+                <div class="historial">
+                    <div class="grid">
+                        <button onclick="historial()">Ver historial</button>
+                        <button onclick="regresar()">Regresar ultima cancion</button>
+                    </div>
+                    <ul id="historialU"></ul>
+                </div>
+            </div>
+            <div class="catalogo">
+                <button onclick="catalogo()" class="contrast">Ver catalogo</button>
+                <ul id="ulcatalogo"></ul>
+            </div>
+        </article>
+    </div>
+</body>
+</html>
